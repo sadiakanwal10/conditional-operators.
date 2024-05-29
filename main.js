@@ -1,20 +1,19 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-let isBookAvailable = true;
-let userBorrowedBooks = 2;
-let maxAllowedBooks = 3;
-if (isBookAvailable && userBorrowedBooks < maxAllowedBooks) {
-    console.log("AP BOOK BORROW KR SAKHTY HAIN");
+let discountAvailableOnCreditTerms = true;
+let maxAllowedTimeInDays = 30;
+let customerMadePaymentInDays = 28;
+if (discountAvailableOnCreditTerms && customerMadePaymentInDays < maxAllowedTimeInDays) {
+    console.log("you are eligible for discount");
 }
 else {
-    console.log("AP BOOK BORROW NAHI KR SAKHTY");
+    console.log("you are not eligible for discount");
 }
-let isCreditCardPaymentOptionAvailable = false;
-let costOfItemPurchasing = 5000;
-let amountInCreditCard = 9000;
-if (isCreditCardPaymentOptionAvailable || costOfItemPurchasing < amountInCreditCard) {
-    console.log("ap item purchase kr sakhty hain");
+let overdraftOptionAvailable = true;
+let limitOfOverdraftByBank = 50000;
+let costOfItemPurchasing = 60000;
+if (overdraftOptionAvailable || costOfItemPurchasing < limitOfOverdraftByBank) {
+    console.log("you are eligible to purchase this item");
 }
 else {
-    console.log("ap item purchase nae krsakhty");
+    ("you are not eligible to purchase this item");
 }
